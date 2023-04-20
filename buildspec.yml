@@ -16,7 +16,7 @@ phases:
       - echo Build started on `date`
       - echo Logging to the Docker Hub...
       - aws s3 cp s3://dockerkey200423/docker.key .docker.key
-      - docker login -u myusername --password-stdin < .docker.key
+      - docker login -u chandanksahu --password-stdin < .docker.key
       - rm .docker.key
       - echo Building the Docker image...
       - docker build -t $ECR_REPOSITORY_URI:latest .
