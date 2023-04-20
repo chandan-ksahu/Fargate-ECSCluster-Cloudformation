@@ -1,0 +1,20 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: The CloudFormation template for the Fargate ECS Cluster.
+
+Parameters:
+  Stage:
+    Type: String
+  ContainerPort:
+    Type: Number
+  ImageURI:
+    Type: String
+
+Resources: {}
+
+Outputs:
+  Stage:
+    Value: !Ref 'Stage'
+  ContainerPort:
+    Value: !Ref 'ContainerPort'
+  ImageURI:
+    Value: !Ref 'ImageURI'    
